@@ -1,0 +1,9 @@
+<% @stations.sorted_stations.each do |station| %>
+  <div class="station">
+    <h2 class="station-name">Station Name: <%= station.name %></h2>
+    <p class="station-address">Station Address: <%= station.street %>, <%= station.city %>, <%= station.state %> <%= station.zip %>  </p>
+    <p class="station-access-times">Access Time: <%= station.access_times %></p>
+    <p class="station-fuel-type">Fuel Type: <%= station.fuel_type %></p>
+    <p class="station-distance">Distance: <%= station.distance %></p>
+  </div>
+<% end %>
